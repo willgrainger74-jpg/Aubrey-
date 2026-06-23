@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curriculum Vitae | Aubrey Pearson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* CV-specific layout, built on the shared letter-page styles */
+    .cv-head { text-align: left; border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 8px; }
+    .cv-head .name { font-family: var(--font-display); font-size: clamp(2rem,4vw,2.6rem); color: var(--ink); margin: 0 0 8px; }
+    .cv-head .meta { color: var(--muted); font-size: .94rem; margin: 0; }
+    .cv-head .meta a { color: var(--rose-deep); text-decoration: none; }
+    .cv-head .meta a:hover { text-decoration: underline; }
+
+    .cv-section { padding: 26px 0; border-bottom: 1px solid var(--line); }
+    .cv-section:last-of-type { border-bottom: 0; }
+    .cv-section > .label {
+      display: inline-flex; align-items: center; gap: 10px;
+      text-transform: uppercase; letter-spacing: .16em; font-size: .72rem;
+      font-weight: 700; color: var(--rose-deep); margin: 0 0 16px;
+    }
+    .cv-section > .label::before { content: ""; width: 24px; height: 1.5px; background: var(--rose); }
+
+    .cv-section p.summary-text { color: #3a2f40; line-height: 1.75; margin: 0; }
+
+    .cv-entry { margin-bottom: 20px; }
+    .cv-entry:last-child { margin-bottom: 0; }
+    .cv-entry .row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; align-items: baseline; }
+    .cv-entry h3 { font-family: var(--font-display); font-size: 1.18rem; color: var(--ink); margin: 0; }
+    .cv-entry .when { font-size: .82rem; font-weight: 700; color: var(--sage); white-space: nowrap; }
+    .cv-entry .place { font-style: italic; color: var(--muted); margin: 2px 0 10px; }
+    .cv-entry ul { margin: 0; padding-left: 18px; color: #3a2f40; }
+    .cv-entry ul li { margin-bottom: 5px; }
+    .cv-entry ul li::marker { color: var(--rose); }
+
+    .chip-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip-grid span {
+      background: var(--cream); border: 1px solid var(--line); color: var(--plum);
+      padding: 9px 14px; border-radius: 999px; font-size: .85rem; font-weight: 600;
+    }
+    .course-list { columns: 2; column-gap: 30px; margin: 6px 0 0; padding-left: 18px; color: #3a2f40; }
+    .course-list li { margin-bottom: 5px; }
+    .course-list li::marker { color: var(--sage); }
+    @media (max-width: 560px) { .course-list { columns: 1; } }
+  </style>
+</head>
+<body class="letter-body">
+  <header class="letter-top">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark">AP</span>
+        <span>Aubrey Pearson</span>
+      </a>
+      <a class="back-link" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Back to Portfolio
+      </a>
+    </div>
+  </header>
+
+  <section class="letter-hero">
+    <div class="wrap">
+      <p class="eyebrow center" style="justify-content:center;">Professional Documents</p>
+      <h1>Curriculum Vitae</h1>
+    </div>
+  </section>
+
+  <section class="letter-wrap">
+    <div class="wrap">
+      <article class="sheet">
+        <div class="accent-bar"></div>
+        <div class="sheet-inner">
+
+          <div class="cv-head">
+            <p class="name">Aubrey Pearson</p>
+            <p class="meta">
+              <a href="tel:8016782924">801-678-2924</a> &nbsp;·&nbsp;
+              <a href="mailto:Pearsonaubrey1@gmail.com">Pearsonaubrey1@gmail.com</a> &nbsp;·&nbsp;
+              Sandy, Utah
+            </p>
+          </div>
+
+          <div class="cv-section">
+            <p class="label">Professional Summary</p>
+            <p class="summary-text">Compassionate and dedicated Clinical Mental Health Counseling graduate student with experience working with diverse client populations in individual and group settings. Skilled in building therapeutic rapport, facilitating psychoeducational groups, conducting assessments, and implementing evidence-based interventions. Committed to supporting clients in achieving personal growth, emotional wellness, and meaningful life change.</p>
+          </div>
+
+          <div class="cv-section">
+            <p class="label">Education</p>
+            <div class="cv-entry">
+              <div class="row">
+                <h3>M.S., Clinical Mental Health Counseling</h3>
+                <span class="when">Expected Oct 2026</span>
+              </div>
+              <p class="place">Grand Canyon University</p>
+            </div>
+            <div class="cv-entry">
+              <div class="row">
+                <h3>B.S., Psychology</h3>
+                <span class="when">May 2022</span>
+              </div>
+              <p class="place">Grand Canyon University</p>
+            </div>
+            <div class="cv-entry">
+              <h3 style="font-size:1rem;">Relevant Coursework</h3>
+              <ul class="course-list">
+                <li>Counseling Theories</li>
+                <li>Group Counseling</li>
+                <li>Psychopathology</li>
+                <li>Assessment and Diagnosis</li>
+                <li>Crisis Intervention</li>
+                <li>Ethics and Professional Practice</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <p class="label">Clinical Experience</p>
+            <div class="cv-entry">
+              <div class="row">
+                <h3>Counseling Intern</h3>
+                <span class="when">Mar 2026 – Present</span>
+              </div>
+              <p class="place">Pinnacle Recovery Center · Holladay, Utah</p>
+              <ul>
+                <li>Provide individual counseling services under supervision.</li>
+                <li>Facilitate psychoeducational and process-oriented groups.</li>
+                <li>Conduct client assessments and assist with treatment planning.</li>
+                <li>Maintain timely and accurate clinical documentation.</li>
+                <li>Collaborate with interdisciplinary treatment teams.</li>
+                <li>Support clients in developing healthy coping strategies and achieving treatment goals.</li>
+              </ul>
+            </div>
+            <div class="cv-entry">
+              <div class="row">
+                <h3>Practicum Student</h3>
+                <span class="when">Aug 2025 – Oct 2025</span>
+              </div>
+              <p class="place">Life Stone Counseling Center · West Jordan, Utah</p>
+              <ul>
+                <li>Assisted with intake assessments and client screenings.</li>
+                <li>Observed and participated in counseling sessions under supervision.</li>
+                <li>Developed case conceptualization and treatment planning skills.</li>
+                <li>Participated in clinical supervision and case consultation.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <p class="label">Relevant Skills</p>
+            <div class="chip-grid">
+              <span>Individual Counseling</span>
+              <span>Group Facilitation</span>
+              <span>Treatment Planning</span>
+              <span>Clinical Documentation</span>
+              <span>Crisis Intervention</span>
+              <span>CBT</span>
+              <span>DBT</span>
+              <span>ACT</span>
+              <span>Trauma-Informed Care</span>
+              <span>Rapport Building</span>
+              <span>Case Management</span>
+              <span>Multicultural Competence</span>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <p class="label">Volunteer Experience</p>
+            <div class="cv-entry">
+              <div class="row">
+                <h3>Community Volunteer</h3>
+                <span class="when">Jan 2024 – Present</span>
+              </div>
+              <p class="place">Humane Society of Utah · Salt Lake City, Utah</p>
+              <ul>
+                <li>Assisted community members through support and outreach services.</li>
+                <li>Participated in educational and wellness initiatives.</li>
+                <li>Collaborated with team members to provide community resources.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="cv-section">
+            <p class="label">Professional Affiliations</p>
+            <ul style="margin:0;padding-left:18px;color:#3a2f40;">
+              <li>Member, American Counseling Association (ACA)</li>
+              <li>Member, American Mental Health Counselors Association (AMHCA)</li>
+            </ul>
+          </div>
+
+        </div>
+      </article>
+
+      <div class="letter-actions">
+        <a class="button primary" href="cv.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+          Download PDF
+        </a>
+        <a class="button ghost" href="index.html#documents">Back to Documents</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p class="brand-foot">Aubrey Pearson</p>
+    <p>Clinical Mental Health Counseling · e-Portfolio &copy; 2026</p>
+  </footer>
+</body>
+</html>
