@@ -1,23 +1,43 @@
-Aubrey Pearson Website Package
+AUBREY PEARSON — CMHC PORTFOLIO WEBSITE
+=======================================
 
-Files included:
-- index.html
-- styles.css
-- aubrey-headshot.jpg
+Files in this package
+---------------------
+- index.html          The website
+- styles.css          The design / styling
+- aubrey-headshot.jpg The photo
+- cv.pdf              Curriculum Vitae
+- cover-letter.pdf    Cover Letter
+- rec-1.pdf           Letter of Recommendation — Melissa Sessions
+- rec-2.pdf           Letter of Recommendation — Lezlie Kelley
 
-Important:
-Google Sites does not let you upload and host a full custom HTML/CSS website like this.
-To keep it on a Google-owned/free style platform, use GitHub Pages instead.
+Keep ALL of these files together in the same folder. The website
+links to the PDFs by name, so don't rename them.
 
-Fastest free hosting option:
-1. Go to github.com and create an account.
-2. Create a new repository named aubrey-portfolio.
-3. Upload index.html, styles.css, and aubrey-headshot.jpg.
-4. Go to Settings > Pages.
+To preview it on your computer
+------------------------------
+Just double-click index.html — it opens in your browser.
+
+To put it online for free (GitHub Pages)
+-----------------------------------------
+1. Go to github.com and create a free account.
+2. Create a new repository named:  aubrey-portfolio
+3. Upload EVERY file from this folder (index.html, styles.css,
+   the .jpg, and all four .pdf files).
+4. Open the repo's  Settings > Pages.
 5. Under "Build and deployment", choose "Deploy from a branch".
-6. Choose main branch and root folder.
-7. Save.
-8. GitHub will give you a live website link.
+6. Select the  main  branch and the  / (root)  folder. Save.
+7. Wait ~1 minute. GitHub shows your live link at the top of that page
+   (it looks like  https://YOUR-USERNAME.github.io/aubrey-portfolio ).
 
-If you want to keep using Google Sites:
-Use this package as the design guide, then copy/paste the text and rebuild the sections manually inside Google Sites.
+Updating a document later
+-------------------------
+Replace the matching PDF (e.g. cv.pdf) with a new file of the SAME name,
+re-upload it to the repo, and the website updates automatically.
+
+Note on Google Sites
+--------------------
+Google Sites can't host a full custom HTML/CSS site like this. Use
+GitHub Pages above (free), or Netlify (drag-and-drop the folder at
+netlify.com). If you must stay on Google Sites, use this as a visual
+guide and rebuild the sections manually there.
